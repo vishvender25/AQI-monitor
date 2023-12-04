@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>AQI Report</title>
+</head>
+<body>
+    <h1 class="heading">Air Quality Index</h1> 
+    <div class="container">
+        <div class="input-btn">
+        <input type="text" name="" id="city-name" placeholder="Enter Your City Name" class="">
+        <button id="submit" class="">Search</button>
+        </div>
+        <div class="air-quality-report">
+            <h2 class="font-bold" id="city"></h2>
+            <h3 class="pollutants mt-2">CO<span id="co-p"> : 0</span></h3>
+            <h3 class="pollutants mt-2">NO2<span id="no2-p"> : 0</span></h3>
+            <h3 class="pollutants mt-2">O3<span id="o3-p">0 : 0</span></h3>
+            <h3 class="pollutants mt-2">SO2<span id="so2-p"> : 0</span></h3>
+            <h3 class="pollutants mt-2">PM10<span id="pm-p"> : 0</span></h3>
+            <h2 id='overall-aqi' class="mt-2 font-bold">Overall AQI : <span id="aqi">0</span></h2>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="">&copy; Vishvender Tyagi</p>
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>
